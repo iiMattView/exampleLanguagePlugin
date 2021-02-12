@@ -28,4 +28,4 @@ out/
 build
 
 # Gradle
-.gradle
+.gradle/
