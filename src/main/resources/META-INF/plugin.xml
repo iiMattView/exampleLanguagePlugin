@@ -18,6 +18,7 @@
         <lang.syntaxHighlighterFactory language="Simple"
                    implementationClass="ch.imt.sdk.language.SimpleSyntaxHighlighterFactory"/>
         <colorSettingsPage implementation="ch.imt.sdk.language.SimpleColorSettingsPage"/>
+        <annotator language="JAVA" implementationClass="ch.imt.sdk.language.SimpleAnnotator"/>
     </extensions>
 
     <actions>
