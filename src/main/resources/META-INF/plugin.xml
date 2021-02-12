@@ -21,6 +21,8 @@
         <annotator language="JAVA" implementationClass="ch.imt.sdk.language.SimpleAnnotator"/>
         <codeInsight.lineMarkerProvider language="JAVA"
                     implementationClass="ch.imt.sdk.language.SimpleLineMarkerProvider"/>
+        <completion.contributor language="Simple"
+                                implementationClass="ch.imt.sdk.language.SimpleCompletionContributor"/>
     </extensions>
 
     <actions>
