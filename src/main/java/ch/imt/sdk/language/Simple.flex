@@ -3,7 +3,7 @@ package ch.imt.sdk.language;
 
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
-import org.intellij.sdk.language.psi.SimpleTypes;
+import ch.imt.sdk.language.psi.SimpleTypes;
 import com.intellij.psi.TokenType;
 
 %%
