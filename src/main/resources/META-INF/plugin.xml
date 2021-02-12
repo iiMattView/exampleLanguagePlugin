@@ -13,7 +13,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <fileType name="Simple File" implementationClass="ch.imt.sdk.language.SimpleFileType"
+                  fieldName="INSTANCE" language="Simple" extensions="simple"/>
     </extensions>
 
     <actions>
