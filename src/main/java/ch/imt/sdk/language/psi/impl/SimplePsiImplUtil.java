@@ -1,6 +1,8 @@
 package ch.imt.sdk.language.psi.impl;
 
+import ch.imt.sdk.language.psi.*;
 import com.intellij.lang.ASTNode;
+
 
 public class SimplePsiImplUtil {
     public static String getKey(SimpleProperty element) {
