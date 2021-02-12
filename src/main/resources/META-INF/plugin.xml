@@ -15,7 +15,10 @@
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="Simple File" implementationClass="ch.imt.sdk.language.SimpleFileType"
                   fieldName="INSTANCE" language="Simple" extensions="simple"/>
+        <lang.parserDefinition language="Simple"
+                    implementationClass="ch.imt.sdk.language.SimpleParserDefinition"/>
     </extensions>
+
 
     <actions>
         <!-- Add your actions here -->
