@@ -30,6 +30,8 @@
                                  implementationClass="ch.imt.sdk.language.SimpleFindUsagesProvider"/>
         <lang.foldingBuilder language="JAVA"
                              implementationClass="ch.imt.sdk.language.SimpleFoldingBuilder"/>
+        <gotoSymbolContributor
+                implementation="ch.imt.sdk.language.SimpleChooseByNameContributor"/>
     </extensions>
 
     <actions>
