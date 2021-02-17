@@ -24,6 +24,8 @@
         <completion.contributor language="Simple"
                                 implementationClass="ch.imt.sdk.language.SimpleCompletionContributor"/>
         <psi.referenceContributor implementation="ch.imt.sdk.language.SimpleReferenceContributor"/>
+        <lang.refactoringSupport language="Simple"
+                                 implementationClass="ch.imt.sdk.language.SimpleRefactoringSupportProvider"/>
     </extensions>
 
     <actions>
