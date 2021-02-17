@@ -1,9 +1,13 @@
 package ch.imt.sdk.language.psi.impl;
 
+import ch.imt.sdk.language.SimpleIcons;
 import ch.imt.sdk.language.psi.*;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElement;
+import com.intellij.navigation.ItemPresentation;
 
+import org.jetbrains.annotations.Nullable;
+import javax.swing.Icon;
 
 public class SimplePsiImplUtil {
     public static String getKey(SimpleProperty element) {
@@ -47,5 +51,27 @@ public class SimplePsiImplUtil {
         } else {
             return null;
         }
+    }
+
+    public static ItemPresentation getPresentation(final SimpleProperty element) {
+        return new ItemPresentation() {
+            @Nullable
+            @Override
+            public String getPresentableText() {
+                return element.getKey();
+            }
+
+            @Nullable
+            @Override
+            public String getLocationString() {
+                return element.getContainingFile().getName();
+            }
+
+            @Nullable
+            @Override
+            public Icon getIcon(boolean unused) {
+                return SimpleIcons.FILE;
+            }
+        };
     }
 }

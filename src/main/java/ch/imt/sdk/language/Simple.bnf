@@ -22,5 +22,5 @@ private item_ ::= (property|COMMENT|CRLF)
 property ::= (KEY? SEPARATOR VALUE?) | KEY {
   mixin="ch.imt.sdk.language.psi.impl.SimpleNamedElementImpl"
   implements="ch.imt.sdk.language.psi.SimpleNamedElement"
-  methods=[getKey getValue getName setName getNameIdentifier]
+  methods=[getKey getValue getName setName getNameIdentifier getPresentation]
 }
