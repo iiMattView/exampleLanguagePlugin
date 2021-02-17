@@ -53,10 +53,10 @@ public class SimpleAnnotator implements Annotator {
         if (properties.isEmpty()) {
             holder.newAnnotation(HighlightSeverity.ERROR, "Unresolved property")
                     .range(keyRange)
-                    .highlightType(ProblemHighlightType.LIKE_UNKNOWN_SYMBOL);
+                    .highlightType(ProblemHighlightType.LIKE_UNKNOWN_SYMBOL)
                     // ** Tutorial step 18.3 - Add a quick fix for the string containing possible properties
-//                    .withFix(new SimpleCreatePropertyQuickFix(key))
-//                    .create();
+                    .withFix(new SimpleCreatePropertyQuickFix(key))
+                    .create();
         } else {
             // Found at least one property, force the text attributes to Simple syntax value character
             holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
